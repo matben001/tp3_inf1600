@@ -14,6 +14,7 @@ int main(int argc, char** argv) {
 
    int nombre_valeurs = 10;
 
+   /*
    printf("Approche iterative ASM\n");
    for(int i=0; i<=nombre_valeurs; i++){
       int factorielle = factorielle_s_iter(i);
@@ -25,20 +26,20 @@ int main(int argc, char** argv) {
       unsigned int factorielle = factorielle_c_iter(i);
       printf("Fact(%d) = %d\n", i, factorielle);
    }
-
+*/
    // Decommentez cette partie lorsque vous avez implemente la version recursive
 
-   // printf("Approche recursive ASM\n");
-   // for(int i=0; i<=nombre_valeurs; i++){
-   //    unsigned int factorielle = factorielle_s_rec(i);
-   //    printf("Fact(%d) = %d\n", i, factorielle);
-   // }
+   printf("Approche recursive ASM\n");
+   for(int i=0; i<=nombre_valeurs; i++){
+       unsigned int factorielle = factorielle_s_rec(i);
+       printf("Fact(%d) = %d\n", i, factorielle);
+    }
 
-   // printf("Approche recursive C\n");
-   // for(int i=0; i<=nombre_valeurs; i++){
-   //    unsigned int factorielle = factorielle_c_rec(i);
-   //    printf("Fact(%d) = %d\n", i, factorielle);
-   // }
+    printf("Approche recursive C\n");
+    for(int i=0; i<=nombre_valeurs; i++){
+       unsigned int factorielle = factorielle_c_rec(i);
+       printf("Fact(%d) = %d\n", i, factorielle);
+    }
 
    return 0;
 }
