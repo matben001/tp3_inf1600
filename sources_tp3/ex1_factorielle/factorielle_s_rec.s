@@ -5,13 +5,17 @@
 
 
 factorielle_s_rec:
-   movl 4(%esp), %ebx
+   
    pushl  %ebp
    movl   %esp, %ebp
-   pushl %ebx
+  pushl %ebx
+  # DEBUT COMPLETION
+  movl 12(%esp), %ebx
+   
 	call facto
 	jmp Retour
 facto:
+
   cmpl $0, %ebx 
   jnz fact1
   movl $1, %eax
@@ -24,6 +28,7 @@ fact1:
   popl %ebx
   imul %ebx
   ret 
+  # FIN COMPLETION
 
 # NE RIEN MODIFIER APRES CETTE LIGNE
 Retour:

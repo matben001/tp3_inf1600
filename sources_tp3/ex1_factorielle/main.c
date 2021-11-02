@@ -14,7 +14,7 @@ int main(int argc, char** argv) {
 
    int nombre_valeurs = 10;
 
-   /*
+ /*
    printf("Approche iterative ASM\n");
    for(int i=0; i<=nombre_valeurs; i++){
       int factorielle = factorielle_s_iter(i);
@@ -42,6 +42,7 @@ int main(int argc, char** argv) {
     }
 
    return 0;
+   
 }
 
 int factorielle_c_iter(unsigned int n){

@@ -1,5 +1,5 @@
-CXX=g++ 
-CFLAGS=-g -m32 -Wall 
+CXX=g++
+CFLAGS=-g -m32 -Wall
 LDFLAGS=-lm
 RM=rm -f
 TARGET=batiment
